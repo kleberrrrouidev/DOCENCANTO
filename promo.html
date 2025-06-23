@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEXTPROMO</title>
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Barra de opções */
+    nav {
+      background-color: #004aad;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+      font-weight: 600;
+    }
+
+    nav ul li:hover {
+      color: #ff2a2a; /* Vermelho vibrante */
+    }
+
+    /* Container dos produtos */
+    .produtos-container {
+      max-width: 1200px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+      flex-grow: 1;
+    }
+
+    /* Card de cada produto */
+    .produto {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .produto img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .produto h3 {
+      font-size: 1.2em;
+      margin-bottom: 8px;
+      color: #004aad;
+      font-weight: 700;
+    }
+
+    .produto p.preco {
+      font-weight: bold;
+      color: #e53935;
+      font-size: 1.1em;
+    }
+
+    /* Rodapé estilo NEXTIME */
+    footer {
+      background-color: #000; /* Preto */
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      letter-spacing: 1.5px;
+      border-top: 4px solid #004aad; /* azul da navbar */
+      position: relative;
+    }
+
+    footer .footer-logo {
+      font-size: 1.8em;
+      font-weight: 900;
+      color: #ff2a2a; /* Vermelho vibrante */
+      margin-bottom: 12px;
+      letter-spacing: 4px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #ff2a2a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #004aad;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">NEXTIME</div>
+    <ul>
+      <li>Home</li>
+      <li>Produtos</li>
+      <li>Promoções</li>
+      <li>Contato</li>
+    </ul>
+  </nav>
+
+  <section class="produtos-container">
+    <div class="produto">
+      <img src="ps5.jpeg" alt="Produto 1" />
+      <h3>XBOX SERIES S</h3>
+      <p class="preco">R$ 3,500</p>
+      <p>512gb+gamepass</p>
+      <p>O preço pode variar</p>
+      <a href="https://www.kabum.com.br/produto/542929/console-playstation-5-slim-sony-ssd-1tb-edicao-digital-com-controle-sem-fio-dualsense-branco-2-jogos-digitais-1000038914?srsltid=AfmBOoot7Siy4V1xq3yA2R2xmomVjTmRWsQmRd2ZkJm9C6KhuKDm56krSyo"target="_blank">CONFERIR</a>
+    </div>
+    <div class="produto">
+      <img src="box.jpeg" alt="Produto 2" />
+      <h3>Produto 2</h3>
+      <p class="preco">R$ </p>
+      <p>Sujeito a variação</p>
+      <a href=""target="_blank">CONFERIR</a>
+    </div>
+    <div class="produto">
+      <img src="g1.jpeg" alt="Produto 3" />
+      <h3>RISE MODE G1</h3>
+      <p class="preco">R$ 100,00</p>
+      <p>Geralmente <p class="preco">180,00</p>
+      <a href="https://www.kabum.com.br/produto/498583/mouse-gamer-rise-mode-g1-pro-black-rgb-12000-dpi-8-botoes-preto-rm-mg-01-fb?srsltid=AfmBOoqCF83HIaYRANuo69YsbnHuqvxnR5OxU9VC8euEOpnQSoFn8FXhlDY"target="_blank">KABUM</a>
+    </div>
+    <div class="produto">
+      <img src="pda.webp" alt="Produto 4" />
+      <h3>MOUSE PAD BASICO</h3>
+      <p class="preco">R$ 20,00</p>
+      <p>Um basico com toque gamer, vale a pena.</p>
+      <a href="https://www.kabum.com.br/produto/134585/mousepad-gamer-fortrek-speed-mpg101-medio-320x240mm-preto-verde-72691?srsltid=AfmBOoomedsLZCJRwlb6eG6wvnY_rPJFDe6_uguvt1lFOQuA3ndsTdTy9Ac"target="_blank">KABUM DNV</a>
+    </div>
+    <div class="produto">
+      <img src="ssd.webp" alt="Produto 5" />
+      <h3>SSD 1TB KINGSTON</h3>
+      <p>15%off no pix</p>
+      <p class="preco">R$ 400,30</p>
+      <a href="https://www.kabum.com.br/produto/621162/ssd-kingston-nv3-1-tb-m-2-2280-pcie-4-0-x4-nvme-leitura-6000-mb-s-gravacao-4000-mb-s-azul-snv3s-1000g" target="_blank">KABUM</a>
+    </div>
+    <div class="produto">
+      <img src="nito.jpeg" alt="Produto 6" />
+      <h3>ACER NITRO V15</h3>
+      <p class="preco">R$ 4,650,01</p>
+      <P>-22%</P>
+      <p> encontrado a 6K</p>
+      <a href="https://www.kabum.com.br/produto/564916/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ram-geforce-rtx-3050-ssd-512gb-15-6-fhd-ips-144hz-windows-11-preto-anv15-51-58az" target="_blank">KABUM</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">NEXTIME</div>
+    <p>© 2025 NEXTIME Group. Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:contato@nextime.com.br">contato@nextime.com.br</a> | Instagram: <a href="https://instagram.com/nextime" target="_blank">@nextime</a></p>
+  </footer>
+
+</body>
+</html>

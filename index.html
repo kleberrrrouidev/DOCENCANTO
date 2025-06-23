@@ -1,0 +1,289 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXGROUP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #383c68;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    #toggle-theme {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffffff30;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .produto {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .produto h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .produto p {
+      color: #555;
+    }
+
+    .produto a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .produto a:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background-color: #383c68;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* 🌙 TEMA ESCURO */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #1f1f3d;
+      color: white;
+    }
+
+    body.dark-mode .produto {
+      background-color: #1e1e1e;
+      border-color: #333;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+    }
+
+    body.dark-mode .produto p {
+      color: #cccccc;
+    }
+
+    body.dark-mode .produto a {
+      background-color: #28a745;
+      color: white;
+    }
+
+    body.dark-mode .produto a:hover {
+      background-color: #1c7c31;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h2 {
+      color: white;
+    }
+
+    body.dark-mode #toggle-theme {
+      background-color: #ffffff10;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔥 CABEÇALHO -->
+  <header>
+    <h1>NEXGROUP BETA V1</h1>
+    <button id="toggle-theme">🌙</button>
+  </header>
+
+  <!-- 🎮 PRIMEIRA PRATELEIRA - JOGOS -->
+  <h2 style="text-align:center; margin-top:20px;">Jogos em destaque</h2>
+  <div class="container">
+    <div class="produto">
+      <img src="mafia.jpeg" alt="Mafia">
+      <h2>MAFIA</h2>
+      <p>Mundo aberto imersivo.</p>
+      <a href="#">COMPRAR</a>
+    </div>
+    <div class="produto">
+      <img src="red.jpeg" alt="Red Dead 2">
+      <h2>Red Dead 2</h2>
+      <p>70% OFF Steam</p>
+      <a href="#">COMPRAR</a>
+    </div>
+    <div class="produto">
+      <img src="max.jpg" alt="Max Payne 3">
+      <h2>Max Payne 3</h2>
+      <p>Max no Brasil</p>
+      <a href="#">COMPRAR</a>
+    </div>
+    <div class="produto">
+      <img src="sile.jpg" alt="Silent Hill 2">
+      <h2>Silent Hill 2</h2>
+      <p>Antigo e aterrorizante</p>
+      <a href="#">COMPRAR</a>
+    </div>
+  </div>
+
+  <!-- 🌟 SEGUNDA PRATELEIRA - PLATAFORMAS -->
+  <h2 style="text-align:center; margin-top:20px;">As melhores plataformas</h2>
+  <div class="container">
+    <div class="produto">
+      <img src="pri.jpeg" alt="Prime Gaming">
+      <h2>Prime Gaming</h2>
+      <p>Resgate seus jogos grátis</p>
+      <a href="#">ACESSAR</a>
+    </div>
+    <div class="produto">
+      <img src="afg.jpeg" alt="GOG">
+      <h2>GOG</h2>
+      <p>Jogos clássicos e atuais</p>
+      <a href="#">ACESSAR</a>
+    </div>
+    <div class="produto">
+      <img src="epi.jpeg" alt="Epic Games">
+      <h2>Epic Games</h2>
+      <p>Jogos gratuitos toda semana</p>
+      <a href="#">ACESSAR</a>
+    </div>
+    <div class="produto">
+      <img src="ss.jpeg" alt="Steam">
+      <h2>Steam Promos</h2>
+      <p>Ofertas imperdíveis</p>
+      <a href="#">ACESSAR</a>
+    </div>
+  </div>
+
+  <!-- 🛍️ TERCEIRA PRATELEIRA - PRODUTOS -->
+  <h2 style="text-align:center; margin-top:20px;">Produtos e Periféricos</h2>
+  <div class="container">
+    <div class="produto">
+      <img src="gh.jpeg" alt="Controle Xbox">
+      <h2>Controle Xbox</h2>
+      <p>Apenas R$390 na Amazon</p>
+      <a href="#">COMPRAR</a>
+    </div>
+    <div class="produto">
+      <img src="aly.jpeg" alt="Xbox Ally">
+      <h2>Xbox Ally</h2>
+      <p>Pré-venda disponível</p>
+      <a href="#">GARANTIR</a>
+    </div>
+    <div class="produto">
+      <img src="po.jpeg" alt="Controle sem fio">
+      <h2>Controle sem fio</h2>
+      <p>Por apenas R$40</p>
+      <a href="#">COMPRAR</a>
+    </div>
+    <div class="produto">
+      <img src="alive.jpeg" alt="Asus Vivobook">
+      <h2>Asus Vivobook 15 Go</h2>
+      <p>R$2.500 na Amazon</p>
+      <a href="#">COMPRAR</a>
+    </div>
+  </div>
+
+  <!-- 🌐 QUARTA PRATELEIRA - GRUPO -->
+  <h2 style="text-align:center; margin-top:20px;">NEXTGROUP</h2>
+  <div class="container">
+    <div class="produto">
+      <img src="nb.jpeg" alt="NextBlog">
+      <h2>NEXTBLOG</h2>
+      <p>O início do blog mais formal da internet</p>
+      <a href="#">VER</a>
+    </div>
+    <div class="produto">
+      <img src="lç.png" alt="Next Game Store">
+      <h2>NEXT GAME STORE</h2>
+      <p>Todos os jogos gratuitos, muitos via Utorrent</p>
+      <a href="#">ENTRAR</a>
+    </div>
+  
+    
+      <div class="produto">
+      <img src="nbg.jpeg" atl="produto 19" />
+      <h2>NEXTPROMOS</h2>
+      <p>Acesse a promos separada por editores next</p>
+      <a href="promo.html" target="_blank">ABRIR</a>
+      </div>
+
+      <div class="produto">
+      <img src="NUU.png" alt="produto" />
+      <h2>nuuvem</h2>
+      <p>RECOMENDADO</p>
+      <a href="https://www.nuuvem.com/br-pt/" target="_blank">VÁ</a>
+      </div>
+
+
+
+
+</div>
+
+
+
+  <!-- 🔥 RODAPÉ -->
+  <footer>
+    <p>&copy; NEXTIME GROUP BR.</p>
+    <p>Contato: kleberluacssilva@53.gmail.com | Instagram: @EM BREVE</p>
+  </footer>
+
+  <!-- 🌙 SCRIPT DO TEMA -->
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+
+</body>
+</html>
