@@ -18,44 +18,45 @@
       align-items: center;
       min-height: 100vh;
       margin: 0;
-      padding: 20px;
+      padding: 30px;
       flex-direction: column;
     }
 
     .container {
       width: 100%;
-      max-width: 500px;
+      max-width: 600px;
       text-align: center;
       flex: 1;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 40px;
-      letter-spacing: 2px;
+      font-size: 4rem; /* Título maior */
+      margin-bottom: 50px;
+      letter-spacing: 3px;
       color: #111;
     }
 
     .buttons {
       display: flex;
-      gap: 15px;
+      gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .buttons a {
       flex: 1;
-      min-width: 120px;
+      min-width: 150px; /* Botões maiores */
       text-align: center;
       text-decoration: none;
       background: #f2f2f2;
-      padding: 15px;
-      border-radius: 10px;
+      padding: 20px; /* Mais espaçamento interno */
+      border-radius: 12px;
       font-weight: bold;
       color: #111;
       transition: 0.3s;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
+      font-size: 1.2rem; /* Fonte maior nos botões */
     }
 
     .buttons a:hover {
@@ -63,15 +64,31 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem; /* Texto maior */
       color: #555;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     footer {
-      margin-top: 30px;
-      font-size: 0.9rem;
+      margin-top: 40px;
+      font-size: 1rem; /* Texto maior no rodapé */
       color: #999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer img {
+      height: 70px; /* Logo maior para mobile */
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 3rem; }
+      .buttons a { font-size: 1rem; padding: 18px; min-width: 130px; }
+      p { font-size: 1rem; }
+      footer img { height: 50px; }
     }
   </style>
 </head>
@@ -88,7 +105,8 @@
   </div>
 
   <footer>
-    Geralmente não vou de uniforme 
+    <img src="SEU-LOGO-AQUI.png" alt="Logo Corporativo">
+    <span>Geralmente não vou de uniforme</span>
   </footer>
 </body>
 </html>
